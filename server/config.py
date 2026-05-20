@@ -34,7 +34,7 @@ class Config:
     
     # --- LLM对话模型配置（使用CodePlan API）---
     # CodePlan API密钥
-    DASHSCOPE_LLM_API_KEY = os.environ.get('DASHSCOPE_LLM_API_KEY', 'sk-sp-df253f04599e496bbe534b2784b0084e')
+    DASHSCOPE_LLM_API_KEY = os.environ.get('DASHSCOPE_LLM_API_KEY', 'sk-sp-df253f04599e496bbe534b2784b0----')
     # CodePlan API地址
     DASHSCOPE_LLM_BASE_URL = os.environ.get('DASHSCOPE_LLM_BASE_URL', 'https://coding.dashscope.aliyuncs.com/v1')
     # 大语言模型名称
@@ -42,7 +42,7 @@ class Config:
     
     # --- Embedding向量化模型配置（使用标准DashScope API）---
     # DashScope API密钥
-    DASHSCOPE_EMBED_API_KEY = os.environ.get('DASHSCOPE_EMBED_API_KEY', 'sk-4e6e4e701016491c9186973102a12b4c')
+    DASHSCOPE_EMBED_API_KEY = os.environ.get('DASHSCOPE_EMBED_API_KEY', 'sk-4e6e4e701016491c9186973102a1----')
     # DashScope API地址
     DASHSCOPE_EMBED_BASE_URL = os.environ.get('DASHSCOPE_EMBED_BASE_URL', 'https://dashscope.aliyuncs.com/compatible-mode/v1')
     # Embedding模型名称
