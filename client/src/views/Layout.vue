@@ -5,7 +5,7 @@
     <el-aside :width="isCollapse ? '64px' : '220px'" class="aside">
       <div class="logo">
         <el-icon :size="24"><ChatDotSquare /></el-icon>
-        <span v-show="!isCollapse" class="logo-text">中医临床智能诊疗知识库</span>
+        <span v-show="!isCollapse" class="logo-text">智能知识库</span>
       </div>
       <el-menu
         :default-active="$route.path"

@@ -4,7 +4,7 @@
     <div class="login-card">
       <div class="login-header">
         <el-icon :size="40" color="#409eff"><ChatDotSquare /></el-icon>
-        <h2>中医临床智能诊疗</h2>
+        <h2>知识库智能问答</h2>
         <p class="subtitle">基于RAG的智能知识检索与问答平台</p>
       </div>
       <el-form
