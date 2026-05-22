@@ -11,7 +11,7 @@ class Config:
     # Flask密钥，用于JWT签名
     SECRET_KEY = os.environ.get('SECRET_KEY', 'enterprise-qa-secret-key-2024')
 
-    # MySQL数据库配置（端口3308，密码123456）
+    # MySQL数据库配置
     MYSQL_HOST = os.environ.get('MYSQL_HOST', '127.0.0.1')
     MYSQL_PORT = int(os.environ.get('MYSQL_PORT', 3306))
     MYSQL_USER = os.environ.get('MYSQL_USER', 'root')
@@ -34,7 +34,7 @@ class Config:
     
     # --- LLM对话模型配置（使用CodePlan API）---
     # CodePlan API密钥
-    DASHSCOPE_LLM_API_KEY = os.environ.get('DASHSCOPE_LLM_API_KEY', 'sk-sp-df253f04599e496bbe534b2784b0----')
+    DASHSCOPE_LLM_API_KEY = os.environ.get('DASHSCOPE_LLM_API_KEY', 'sk-sp-df253f04599e496bbe534b2784b0084e')
     # CodePlan API地址
     DASHSCOPE_LLM_BASE_URL = os.environ.get('DASHSCOPE_LLM_BASE_URL', 'https://coding.dashscope.aliyuncs.com/v1')
     # 大语言模型名称
@@ -42,7 +42,7 @@ class Config:
     
     # --- Embedding向量化模型配置（使用标准DashScope API）---
     # DashScope API密钥
-    DASHSCOPE_EMBED_API_KEY = os.environ.get('DASHSCOPE_EMBED_API_KEY', 'sk-4e6e4e701016491c9186973102a1----')
+    DASHSCOPE_EMBED_API_KEY = os.environ.get('DASHSCOPE_EMBED_API_KEY', 'sk-4e6e4e701016491c9186973102a12b4c')
     # DashScope API地址
     DASHSCOPE_EMBED_BASE_URL = os.environ.get('DASHSCOPE_EMBED_BASE_URL', 'https://dashscope.aliyuncs.com/compatible-mode/v1')
     # Embedding模型名称
@@ -68,7 +68,7 @@ class Config:
     CHUNK_OVERLAP = 50      # 分块之间的重叠字符数
 
     # 向量化批处理配置
-    EMBED_BATCH_SIZE = 10   # 每批发送给Ollama的分块数量
+    EMBED_BATCH_SIZE = 10   # 每批发送给的分块数量
     EMBED_MAX_RETRIES = 3   # 嵌入失败最大重试次数
 
     # RAG检索配置

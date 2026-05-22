@@ -56,6 +56,7 @@ def ask():
         session_id=session_id,
         question=question,
         answer=answer,
+        #Python 对象 source_docs 转换（序列化）为一个标准的 JSON 格式字符串
         source_docs=json.dumps(source_docs, ensure_ascii=False)
     )
     db.session.add(chat)

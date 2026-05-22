@@ -1,8 +1,4 @@
-"""
-知识库路由
-提供知识库的增删改查接口
-更多免费毕业设计：https://www.java1234.com/a/bysj/python/
-"""
+
 from flask import Blueprint, request, g
 from models import db
 from models.knowledge_base import KnowledgeBase

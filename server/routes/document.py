@@ -1,8 +1,4 @@
-"""
-文档路由
-提供文档上传、列表查询和删除接口
-更多免费毕业设计：https://www.java1234.com/a/bysj/python/
-"""
+
 import os
 import uuid
 from flask import Blueprint, request, g, current_app

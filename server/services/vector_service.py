@@ -149,6 +149,7 @@ class VectorService:
             from docx import Document as DocxDocument
             doc = DocxDocument(file_path)
             for para in doc.paragraphs:
+                #取出段落文字，并去掉前后空格、空行
                 if para.text.strip():
                     text += para.text + '\n'
 
